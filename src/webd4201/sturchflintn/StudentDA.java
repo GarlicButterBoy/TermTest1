@@ -117,7 +117,8 @@ public class StudentDA
      * @return Student  Object form of the data collected for a student
      * @throws NotFoundException    throws an exception if the user cannot be found
      */
-    public static Student retrieve(long id) throws NotFoundException, SQLException, InvalidIdException, InvalidNameException, InvalidPasswordException, InvalidUserDataException { // retrieve Customer and Boat data
+    public static Student retrieve(long id) throws NotFoundException, SQLException, InvalidIdException, InvalidNameException, InvalidPasswordException, InvalidUserDataException
+    { // retrieve Customer and Boat data
 
         aStudent = new Student();
         // define the SQL query statement using the phone number key
