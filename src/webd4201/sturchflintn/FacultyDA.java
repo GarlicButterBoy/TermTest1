@@ -351,7 +351,7 @@ public class FacultyDA
         String sqlUpdateFaculty = "UPDATE faculty " +
                 "SET school_code = ?, " +
                 "school_description = ?, " +
-                "office = ? " +
+                "office = ?, " +
                 "phone_extension = ? " +
                 "WHERE id = ?";
         PreparedStatement sqlFacultyUpdate = aConnection.prepareStatement(sqlUpdateFaculty);
@@ -361,10 +361,6 @@ public class FacultyDA
         sqlFacultyUpdate.setInt(4, phone_extension);
         sqlFacultyUpdate.setLong(5, id);
 
-
-
-        //System.out.println(sqlUpdateStudent);
-        //System.out.println(sqlUpdateUser);
         // see if this customer exists in the database
         // NotFoundException is thrown by find method
         try

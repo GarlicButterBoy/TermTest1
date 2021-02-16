@@ -63,15 +63,15 @@ public class TermTest1Tester {
                 System.out.println(e.getMessage());
             }
 
-            //    try
-            //    {
-            //        System.out.println("\nAttempt to delete the new faculty record for "
-            //                + aFaculty.getFirstName() + " " + aFaculty.getLastName() + "(Id: " + aFaculty.getId() + ")");
-            //        aFaculty.delete();
-            //        System.out.println("Faculty record with id " + aFaculty.getId() + " successfully removed from the database.\n");
-            //    } catch (NotFoundException e) {
-            //        System.out.println(e.getMessage());
-            //    }
+                try
+                {
+                    System.out.println("\nAttempt to delete the new faculty record for "
+                            + aFaculty.getFirstName() + " " + aFaculty.getLastName() + "(Id: " + aFaculty.getId() + ")");
+                    aFaculty.delete();
+                    System.out.println("Faculty record with id " + aFaculty.getId() + " successfully removed from the database.\n");
+                } catch (NotFoundException e) {
+                    System.out.println(e.getMessage());
+                }
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
